@@ -1,0 +1,25 @@
+/** Centering **/
+@mixin centering-vertical($height) {
+    height: $height;
+    line-height: $height;
+}
+
+@mixin centering-horizontal($width) {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/** Text layout **/
+
+@mixin text-right() {
+    text-align: right;
+}
+
+@mixin text-left() {
+    text-align: left;
+}
+
+@mixin text-center() {
+    text-align: center;
+}

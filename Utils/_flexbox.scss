@@ -1,0 +1,10 @@
+/**　Flexbox **/
+
+@mixin flex() {
+    @include prefix(display, flex);
+}  // Flexbox for box element.
+
+
+@mixin inline-flex() {
+    @include prefix(display, inline-flex);
+} // Flexbox for inline element.
