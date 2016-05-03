@@ -1,2 +1,6 @@
+## Extensions
 *.DS_Store
 *.log
+
+## Directories
+node_modules/

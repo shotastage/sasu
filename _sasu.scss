@@ -18,8 +18,11 @@ $sasu-opera: false;
 
 
 
-
-@import "Functions/prefix";
+// Functional Mixins
 @import "Functions/keyframes";
+@import "Functions/prefix";
 
+// Utily Mixins
+@import "Utils/flex";
+@import "Utils/layout";
 @import "Utils/size";
