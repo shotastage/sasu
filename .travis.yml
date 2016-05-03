@@ -3,7 +3,6 @@ node_js:
   - "5.1"
 
 before_script:
-  - rm Sass/test.css
   - npm install -g gulp
   - npm install -g node-sass
   - npm install -g gulp-sass
