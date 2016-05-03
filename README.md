@@ -1,5 +1,7 @@
 Sasu
 -----
+[![Build Status](https://travis-ci.org/shotastage/sasu.svg?branch=master)](https://travis-ci.org/shotastage/sasu)
+
 This is a mixin library for stylesheet coding written in Sass.
 
 ### Features
