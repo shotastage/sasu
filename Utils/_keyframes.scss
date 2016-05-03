@@ -1,0 +1,36 @@
+@mixin keyframes($animation-name) {
+  @if $sasu-config {
+      @if $sasu-chrome or $sasu-safari {
+          @-webkit-keyframes #{$animation-name} {
+              @content;
+          }
+      }
+      @if $sasu-firefox {
+          @-moz-keyframes #{$animation-name} {
+              @content;
+          }
+      }
+      @if $sasu-edge or $sasu-ie {
+          @-ms-keyframes #{$animation-name} {
+              @content;
+          }
+      }
+      @if $sasu-opera {
+          @-o-keyframes #{$animation-name} {
+              @content;
+          }
+      }
+      @keyframes #{$animation-name} {
+          @content;
+      }
+  }
+}
+
+
+
+
+
+@mixin animation($animation-name) {
+    @include prefix-prop(animation, $animation-name);
+    @include prefix-prop(animation-fill-mode, both);
+}

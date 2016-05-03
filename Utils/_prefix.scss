@@ -1,0 +1,40 @@
+/**
+*   Sasu -- Version 0.0.1
+*   Copyright (c) 2016 Shota Shimazu
+*   This program is freely distributed under the MIT, see LICENSE for detail.
+**/
+
+@mixin prefix($prop, $arg...) {
+    @if $sasu-config {
+        @if $chrome or $safari {
+            #{$prop}: -webkit-#{$arg};
+        }
+        @if $firefox {
+            #{$prop}: -moz-#{$arg};
+        }
+        @if $edge or $ie {
+            #{$prop}: -ms-#{$arg};
+        }
+        @if $opera {
+            #{$prop}: -o-#{$arg};
+        }
+    }
+}
+
+
+@mixin prefix-prop($prop, $arg...) {
+    @if $sass-config {
+        @if $chrome or $safari {
+            -webkit-#{$prop}: $arg;
+        }
+        @if $firefox {
+            -moz-#{$prop}: $arg;
+        }
+        @if $edge or $ie {
+            -ms-#{$prop}: $arg;
+        }
+        @if $opera {
+            -o-#{$prop}: $arg;
+        }
+    }
+}
