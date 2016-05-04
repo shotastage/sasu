@@ -8,3 +8,8 @@
 @mixin inline-flex() {
     @include prefix(display, inline-flex);
 } // Flexbox for inline element.
+
+
+@mixin flex-direction($arg) {
+    @include prefix-prop(flex-direction, $arg);
+} // Flex direction

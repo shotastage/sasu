@@ -16,11 +16,16 @@ $sasu-edge: true;
 $sasu-ie: true;
 $sasu-opera: false;
 
+/*  CSS Version4 support */
+$sasu-v4-support: false;
+$sasu-v3-support: true;
+
 
 
 // Functional Mixins
 @import "Functions/keyframes";
 @import "Functions/prefix";
+@import "Functions/v4-selectors"
 
 // Utily Mixins
 @import "Utils/flex";
