@@ -30,3 +30,20 @@
         }
     }
 }
+
+
+
+// :not
+@mixin v4-not($sltr...) {
+    @if $sasu-v4-support {
+        #{$sltr}:not {
+            @content;
+        }
+    } @else {
+        @each #{$sltr} in {
+            #{$sltr}:not {
+                @content;
+            }
+        }
+    }
+}

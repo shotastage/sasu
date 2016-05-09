@@ -1,5 +1,8 @@
 //** Sizes **//
-@mixin equilateral($size) {
+@mixin equilateral($size, $with-centering: false) {
     width: $size;
     height: $size;
+    @if $with-centering {
+        line-height: $size;
+    }
 }
