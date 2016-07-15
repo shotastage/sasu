@@ -6,16 +6,16 @@
 
 @mixin prefix($prop, $arg...) {
     @if $sasu-config {
-        @if $chrome or $safari {
+        @if $chrome or $sasu-safari {
             #{$prop}: -webkit-#{$arg};
         }
-        @if $firefox {
+        @if $sasu-firefox {
             #{$prop}: -moz-#{$arg};
         }
-        @if $edge or $ie {
+        @if $sasu-edge or $sasu-ie {
             #{$prop}: -ms-#{$arg};
         }
-        @if $opera {
+        @if $sasu-opera {
             #{$prop}: -o-#{$arg};
         }
     }
@@ -24,16 +24,16 @@
 
 @mixin prefix-prop($prop, $arg...) {
     @if $sasu-config {
-        @if $chrome or $safari {
+        @if $sasu-chrome or $sasu-safari {
             -webkit-#{$prop}: $arg;
         }
-        @if $firefox {
+        @if $sasu-firefox {
             -moz-#{$prop}: $arg;
         }
-        @if $edge or $ie {
+        @if $sasu-edge or $sasu-ie {
             -ms-#{$prop}: $arg;
         }
-        @if $opera {
+        @if $sasu-opera {
             -o-#{$prop}: $arg;
         }
     }
