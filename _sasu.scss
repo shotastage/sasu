@@ -26,7 +26,7 @@ $sasu-v3-support: true;
 @import "Functions/keyframes";
 @import "Functions/prefix";
 @if $sasu-v4-support {
-  @import "Functions/v4-selectors";
+  // @import "Functions/v4-selectors";
 }
 
 // Utily Mixins
