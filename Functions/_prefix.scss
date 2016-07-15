@@ -6,7 +6,7 @@
 
 @mixin prefix($prop, $arg...) {
     @if $sasu-config {
-        @if $chrome or $sasu-safari {
+        @if $sasu-chrome or $sasu-safari {
             #{$prop}: -webkit-#{$arg};
         }
         @if $sasu-firefox {
