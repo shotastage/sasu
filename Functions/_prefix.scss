@@ -22,7 +22,7 @@
 }
 
 
-@mixin prefix-prop($prop, $arg...) {
+@mixin prefixProp($prop, $arg...) {
     @if $sasu-config {
         @if $sasu-chrome or $sasu-safari {
             -webkit-#{$prop}: $arg;

@@ -19,36 +19,23 @@
 
 // Functions -> _prefix.scss
 @include prefix(animation, testAnim);
-@include prefix-prop(appearance, none);
-
-
-
-// Functions -> _v4-selectors.scss
-/*
-@include any-link(.testClass) {
-    background: #fff;
-}
-@include v4-matches(#testID, footer) {
-  background: red;
-}
-@include v4-not(.avoid) {
-  background: blue;
-}
-*/
-
+@include prefixProp(appearance, none);
 
 
 // Utils -> _flexbox.scss
-  // -->
+@include flex;
+@include inlineFlex;
+@include flexDirection;
+
 
 // Utils -> _layout.scss
-@include centering-vertical(30px);
-@include centering-horizontal(30px);
-@include text-right();
-@include text-left();
-@include text-center();
-
+@include centeringVertical(30px);
+@include centeringHorizontal(100px);
+@include textRight;
+@include textLeft;
+@include textCenter;
 
 
 // Utils -> _size.scss
-@include equilateral(20px);
+@include equilateral(30px, true);
+@include equilateral(30px, false);

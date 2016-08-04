@@ -5,11 +5,11 @@
 }  // Flexbox for box element.
 
 
-@mixin inline-flex() {
+@mixin inlineFlex() {
     @include prefix(display, inline-flex);
 } // Flexbox for inline element.
 
 
-@mixin flex-direction($arg) {
+@mixin flexDirection($arg) {
     @include prefix-prop(flex-direction, $arg);
 } // Flex direction
