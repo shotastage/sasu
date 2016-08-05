@@ -11,5 +11,5 @@
 
 
 @mixin flexDirection($arg) {
-    @include prefix-prop(flex-direction, $arg);
+    @include prefixProp(flex-direction, $arg);
 } // Flex direction
