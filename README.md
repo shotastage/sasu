@@ -11,4 +11,4 @@ This is a mixin library for stylesheet coding written in Sass.
 
 
 ### Open Source
-Sass is freery distributed under the MIT, see LICENSE for detail.
+Sasu is freely distributed under the MIT, see LICENSE for detail.
