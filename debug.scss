@@ -39,3 +39,5 @@
 // Utils -> _size.scss
 @include equilateral(30px, true);
 @include equilateral(30px, false);
+@include size(100%, 60px);
+@include size(60px);
