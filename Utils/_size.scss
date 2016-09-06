@@ -7,9 +7,11 @@
     }
 }
 
+
+
 @mixin size($width, $height, $with-centering: false ) {
   width: $width;
-  height: $height
+  height: $height;
   @if $with-centering {
     line-height: $height;
   }
