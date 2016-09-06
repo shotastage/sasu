@@ -18,8 +18,8 @@
 
 
 // Functions -> _prefix.scss
-@include prefix(animation, testAnim);
-@include prefixProp(appearance, none);
+@include prefixOnValue(animation, testAnim);
+@include prefix(appearance, none);
 
 
 // Utils -> _diagrams.scss
@@ -36,7 +36,7 @@
 
 // Utils -> _layout.scss
 @include centeringVertical(30px);
-@include centeringHorizontal(100px);
+@include centeringHorizontal;
 @include textRight;
 @include textLeft;
 @include textCenter;

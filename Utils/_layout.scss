@@ -1,10 +1,14 @@
 /** Centering **/
+
+// You can use size instead of centeringVertical like following.
+// @include size(width, height, true)
+
 @mixin centeringVertical($height) {
     height: $height;
     line-height: $height;
 }
 
-@mixin centeringHorizontal($width) {
+@mixin centeringHorizontal {
     display: inline-block;
     text-align: center;
 }
