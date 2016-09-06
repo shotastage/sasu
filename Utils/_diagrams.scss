@@ -1,9 +1,9 @@
-@mixin circle($size){
-    @include size($size, $size);
+@mixin circle($size, $with-centering: false){
+    @include size($size, $size, with-centering);
     border-radius: 100%;
 }
 
-@mixin square($size, $radius: 3px) {
-    @include size($size);
+@mixin square($size, $radius: 3px, $with-centering: flase) {
+    @include size($size, $size, $with-centering);
     border-radius: radius;
 }
