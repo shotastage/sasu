@@ -30,6 +30,7 @@ $sasu-v3-support: true;
 }
 
 // Utily Mixins
+@import "Utils/diagrams";
 @import "Utils/flexbox";
 @import "Utils/layout";
 @import "Utils/size";

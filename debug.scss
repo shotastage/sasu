@@ -22,6 +22,12 @@
 @include prefixProp(appearance, none);
 
 
+// Utils -> _diagrams.scss
+@include circle(30px);
+@include square(30px);
+@include square(30px, 5px);
+
+
 // Utils -> _flexbox.scss
 @include flex;
 @include inlineFlex;
@@ -40,4 +46,4 @@
 @include equilateral(30px, true);
 @include equilateral(30px, false);
 @include size(100%, 60px);
-@include size(60px);
+@include size(60px, true);

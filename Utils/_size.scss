@@ -3,11 +3,14 @@
     width: $size;
     height: $size;
     @if $with-centering {
-        line-height: $size;
+      line-height: $size;
     }
 }
 
-@mixin size($width, $height: $width) {
+@mixin size($width, $height, $with-centering: false ) {
   width: $width;
   height: $height
+  @if $with-centering {
+    line-height: $height;
+  }
 }

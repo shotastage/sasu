@@ -1,0 +1,8 @@
+@mixin circle {
+    border-radius: 100%;
+}
+
+@mixin square($size, $radius: 3px) {
+    @include size($size);
+    border-radius: radius;
+}
