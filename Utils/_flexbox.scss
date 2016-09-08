@@ -1,7 +1,7 @@
 /**　Flexbox **/
 
 @mixin flex() {
-    @include prefix(display, flex);
+    @include prefixOnValue(display, flex);
 }  // Flexbox for box element.
 
 
@@ -11,5 +11,5 @@
 
 
 @mixin flexDirection($arg) {
-    @include prefixProp(flex-direction, $arg);
+    @include prefix(flex-direction, $arg);
 } // Flex direction
