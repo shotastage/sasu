@@ -31,6 +31,6 @@
 
 
 @mixin animation($animation-name) {
-    @include prefixProp(animation, $animation-name);
-    @include prefixProp(animation-fill-mode, both);
+    @include prefix(animation, $animation-name);
+    @include prefix(animation-fill-mode, both);
 }
