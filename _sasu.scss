@@ -30,7 +30,7 @@ $sasu-v3-support: true;
 @import "Mixins/layout";
 @import "Mixins/size";
 @import "Mixins/IESupports";
-@import "Mixins/font-utils"
+@import "Mixins/font-utils";
 
 
 @if $sasu-v4-support {
