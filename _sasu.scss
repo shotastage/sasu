@@ -1,5 +1,5 @@
 /** Sasu is mixin library written in Sass(SCSS)
-**  Copyright (c) 2016 Shota Shimazu
+**  Copyright (c) 2016-2017 Shota Shimazu
 **
 **  This program is freely distributed under the MIT, see LICENSE for detail.
 */
@@ -22,15 +22,17 @@ $sasu-v3-support: true;
 
 
 
-// Functional Mixins
-@import "Functions/keyframes";
-@import "Functions/prefix";
-@if $sasu-v4-support {
-  // @import "Functions/v4-selectors";
-}
 
-// Utily Mixins
-@import "Utils/diagrams";
-@import "Utils/flexbox";
-@import "Utils/layout";
-@import "Utils/size";
+@import "Mixins/keyframes";
+@import "Mixins/prefix";
+@import "Mixins/diagrams";
+@import "Mixins/flexbox";
+@import "Mixins/layout";
+@import "Mixins/size";
+@import "Mixins/IESupports";
+@import "Mixins/font-utils"
+
+
+@if $sasu-v4-support {
+  // @import "Mixins/v4-selectors";
+}
