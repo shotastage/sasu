@@ -1,0 +1,21 @@
+@mixin visible($arg: block) {
+    display: $arg;
+}
+
+@mixin invisible() {
+    display: none;
+}
+
+@mixin hidden() {
+    @include invisible();
+}
+
+@mixin createVisibilityUtils() {
+    .visible {
+        @include visible();
+    }
+
+    .invisible {
+        @include invisible();
+    }
+}

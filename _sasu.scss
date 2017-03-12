@@ -31,6 +31,7 @@ $sasu-v3-support: true;
 @import "Mixins/size";
 @import "Mixins/IESupports";
 @import "Mixins/font-utils";
+@import "Mixins/visibility";
 
 
 @if $sasu-v4-support {
