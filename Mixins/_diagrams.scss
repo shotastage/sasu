@@ -1,6 +1,12 @@
+//
+// _diagrams.scss
+// Copyright (c) 2017 Labbiness.
+// Created by Shota Shimazu
+//
+
 @mixin circle($size, $with-centering: false){
     @include size($size, $size, with-centering);
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 @mixin square($size, $radius: 3px, $with-centering: flase) {
